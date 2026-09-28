@@ -1,0 +1,877 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>정태일 · 글쓰는 여행자</title>
+<meta name="description" content="정태일 포트폴리오 — 어렵고 복잡한 말을 쉽고 간단하게 구조화하는 비즈니스 라이팅 전문가. 언론홍보·대정부 커뮤니케이션·CEO 스피치라이팅·AI 업무혁신.">
+<meta property="og:title" content="정태일 · 글쓰는 여행자">
+<meta property="og:description" content="정태일 포트폴리오 — 어렵고 복잡한 말을 쉽고 간단하게 구조화하는 비즈니스 라이팅 전문가. 언론홍보·대정부 커뮤니케이션·CEO 스피치라이팅·AI 업무혁신.">
+<meta property="og:type" content="website">
+<meta property="og:image" content="images/profile.jpg">
+<link rel="icon" href="images/logo.png">
+<style>html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0}[hidden]{display:none!important}</style>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Gowun+Batang:wght@400;700&family=IBM+Plex+Sans+KR:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap"><style id="main">
+:root{
+  --paper:#FAFAF8; --ink:#17191C; --muted:#5F636A; --faint:#999DA4;
+  --rule:#E4E4DF; --card:#FFFFFF; --red:#C8372D; --red-soft:rgba(200,55,45,.08);
+  --bar:#E9E9E4; --logo-filter:none;
+  --serif:"Gowun Batang","Nanum Myeongjo","Apple SD Gothic Neo",serif;
+  --sans:"IBM Plex Sans KR","Apple SD Gothic Neo","Malgun Gothic",system-ui,sans-serif;
+  --mono:"IBM Plex Mono",ui-monospace,Menlo,monospace;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --paper:#131416; --ink:#ECECE8; --muted:#A3A6AC; --faint:#72767D;
+    --rule:#2A2C30; --card:#1A1B1E; --red:#E8625A; --red-soft:rgba(232,98,90,.12);
+    --bar:#26282C; --logo-filter:invert(1); color-scheme:dark;
+  }
+}
+:root[data-theme="dark"]{
+  --paper:#131416; --ink:#ECECE8; --muted:#A3A6AC; --faint:#72767D;
+  --rule:#2A2C30; --card:#1A1B1E; --red:#E8625A; --red-soft:rgba(232,98,90,.12);
+  --bar:#26282C; --logo-filter:invert(1); color-scheme:dark;
+}
+*{box-sizing:border-box}
+body{background:var(--paper);color:var(--ink);font-family:var(--sans);font-size:16px;line-height:1.7;padding-inline:24px;-webkit-font-smoothing:antialiased;word-break:keep-all;overflow-wrap:break-word}
+a{color:inherit}
+img{max-width:100%;display:block}
+.wrap{max-width:1040px;margin:0 auto}
+.narrow{max-width:680px}
+h1,h2,h3{font-family:var(--serif);font-weight:700;text-wrap:balance;margin:0}
+p{margin:0}
+.label{font-family:var(--mono);font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:var(--faint)}
+a:focus-visible,button:focus-visible{outline:2px solid var(--red);outline-offset:3px;border-radius:2px}
+
+.nav{position:sticky;top:env(safe-area-inset-top,0px);z-index:5;background:var(--paper);border-bottom:1px solid var(--rule);margin-inline:-24px;padding:12px 24px}
+.nav .wrap{display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap}
+.nav .logo{height:34px;width:auto;filter:var(--logo-filter)}
+.nav ul{display:flex;gap:22px;list-style:none;margin:0;padding:0;font-size:14px;flex-wrap:wrap}
+.nav ul a{text-decoration:none;color:var(--muted)}
+.nav ul a:hover{color:var(--ink)}
+
+section{padding-block:72px;border-bottom:1px solid var(--rule)}
+.sec-head{display:flex;justify-content:space-between;align-items:baseline;gap:16px;margin-bottom:32px;flex-wrap:wrap}
+.sec-head h2{font-size:28px}
+
+/* hero */
+.hero{padding-block:88px 64px}
+.hero .eyebrow{margin-bottom:28px}
+.hero h1{font-size:clamp(34px,6vw,64px);line-height:1.22;letter-spacing:-.01em;max-width:15em}
+.hero h1 em{font-style:normal;box-shadow:inset 0 -2px 0 var(--red);background:linear-gradient(transparent 62%,var(--red-soft) 62%)}
+.hero .roles{margin-top:24px;font-size:15px;color:var(--muted)}
+.stats{display:grid;grid-template-columns:repeat(3,1fr);margin-top:48px;border-top:1px solid var(--rule)}
+.stat{padding:22px 20px 0 0}
+.stat+.stat{padding-left:20px;border-left:1px solid var(--rule)}
+.stat b{display:block;font-family:var(--serif);font-size:clamp(28px,4vw,40px);line-height:1.1}
+.stat span{display:block;margin-top:8px;font-size:13px;color:var(--muted)}
+
+/* about */
+.about{display:grid;grid-template-columns:minmax(0,300px) minmax(0,1fr);gap:48px;align-items:start}
+.about .photo{border-radius:6px;overflow:hidden;border:1px solid var(--rule)}
+.about .claim{font-family:var(--serif);font-size:clamp(22px,2.6vw,28px);line-height:1.5;margin-bottom:24px}
+.about .claim mark{background:none;color:inherit;box-shadow:inset 0 -2px 0 var(--red)}
+.about .intro{font-size:17px;color:var(--muted);margin-bottom:32px;line-height:1.9}
+.pillars{border-top:1px solid var(--rule)}
+.pillar{display:grid;grid-template-columns:88px 1fr;gap:16px;padding-block:18px;border-bottom:1px solid var(--rule)}
+.pillar b{font-family:var(--serif);font-size:22px}
+.pillar p{font-size:15px}
+.pillar small{display:block;margin-top:4px;color:var(--faint);font-size:13px}
+.skills{display:grid;grid-template-columns:repeat(2,1fr);gap:20px 32px;margin-top:40px}
+.skill .k{font-family:var(--mono);font-size:12px;color:var(--red)}
+.skill b{display:block;font-size:16px;margin:4px 0 6px}
+.skill p{font-size:14px;color:var(--muted)}
+.principles{display:flex;flex-wrap:wrap;gap:8px;margin-top:28px}
+.principles span{font-size:13px;border:1px solid var(--rule);border-radius:999px;padding:6px 12px;color:var(--muted)}
+.principles b{color:var(--ink);font-weight:600;margin-right:4px}
+
+/* career — horizontal */
+.tl-scroll{overflow-x:auto;padding-bottom:8px}
+.tl{position:relative;min-width:980px;height:500px}
+.tl .lane-name{position:absolute;left:0;font-size:12px;color:var(--faint);font-family:var(--mono);letter-spacing:.06em}
+.tl .axis{position:absolute;left:96px;right:0;top:466px;height:1px;background:var(--ink)}
+.tl .tick{position:absolute;top:466px;width:1px;height:8px;background:var(--ink)}
+.tl .tick span{position:absolute;top:12px;left:50%;transform:translateX(-50%);font-family:var(--mono);font-size:12px;color:var(--muted)}
+.tl .grid{position:absolute;top:0;bottom:34px;width:1px;background:var(--rule)}
+.tl .bar{position:absolute;height:14px;border-radius:7px;background:var(--bar);border:1px solid var(--faint)}
+.tl .bar.now{background:var(--red-soft);border-color:var(--red)}
+.tl .bar.now::after{content:"";position:absolute;right:-12px;top:2px;border-left:8px solid var(--red);border-top:4px solid transparent;border-bottom:4px solid transparent}
+.tl .tag{position:absolute;font-size:12.5px;line-height:1.45;width:180px}
+.tl .tag.r{text-align:right}
+.tl .tag b{display:block;font-size:13.5px}
+.tl .tag i{font-style:normal;color:var(--muted);display:block}
+.tl .tag .d{font-family:var(--mono);font-size:11px;color:var(--faint)}
+.tl .ms{position:absolute;width:12px;height:12px;transform:rotate(45deg);background:var(--paper);border:1.5px solid var(--ink)}
+.tl .ms.red{background:var(--red);border-color:var(--red)}
+.tl .lead{position:absolute;width:1px;background:var(--rule)}
+.tl .next{position:absolute;font-size:12px;color:var(--red);font-weight:600}
+.tl-note{margin-top:14px;font-size:13px;color:var(--faint)}
+
+/* work */
+.work-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:40px 32px}
+.work{display:flex;flex-direction:column;gap:14px;text-decoration:none}
+.thumb{aspect-ratio:16/10;border-radius:6px;overflow:hidden;border:1px solid var(--rule);background:var(--card);max-width:100%;position:relative;padding:24px;display:flex;flex-direction:column;justify-content:flex-end}
+.thumb.red{background:var(--red-soft);border-color:transparent}
+.thumb .big{font-family:var(--serif);font-size:clamp(40px,6vw,64px);line-height:1;color:var(--red)}
+.thumb .sub{margin-top:10px;font-size:14px;color:var(--muted)}
+.thumb .names{position:absolute;top:22px;left:24px;right:24px;display:flex;flex-wrap:wrap;gap:6px}
+.thumb .names span{font-size:12px;border:1px solid var(--rule);background:var(--paper);border-radius:999px;padding:3px 10px}
+.thumb .qt{font-family:var(--serif);font-size:clamp(24px,3.4vw,34px);line-height:1.35}
+.thumb .covers{display:flex;gap:12px;align-items:flex-end;justify-content:center;height:100%}
+.thumb .covers img{height:78%;width:auto;box-shadow:0 6px 16px rgba(0,0,0,.18);border-radius:2px}
+.thumb .covers img:nth-child(2){height:88%}
+.work .meta{display:flex;gap:10px;font-size:13px;color:var(--faint)}
+.work h3{font-size:22px;line-height:1.35}
+.work p{font-size:15px;color:var(--muted)}
+.work .go{font-size:14px;color:var(--red);font-weight:500}
+.work .soon{font-size:13px;color:var(--faint)}
+
+/* books */
+.shelf{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:32px 24px}
+.bk{text-decoration:none;display:flex;flex-direction:column;gap:10px}
+.bk .cv{aspect-ratio:2/2.9;border-radius:3px;overflow:hidden;box-shadow:0 6px 18px rgba(0,0,0,.14);background:var(--card);max-width:100%}
+.bk .cv img{width:100%;height:100%;object-fit:cover}
+.bk .cv.type{display:flex;flex-direction:column;justify-content:space-between;padding:16px;border:1px solid var(--rule);box-shadow:none}
+.bk .cv.type b{font-family:var(--serif);font-size:19px;line-height:1.35}
+.bk .cv.type span{font-size:12px;color:var(--faint)}
+.bk .t{font-size:14px;font-weight:600;line-height:1.45}
+.bk .m{font-size:12px;color:var(--faint);font-family:var(--mono)}
+.bk .n{font-size:12.5px;color:var(--muted)}
+.bk .kb{font-size:12px;color:var(--red)}
+a.bk:hover .t{text-decoration:underline}
+
+/* contact */
+.contact-row{display:flex;flex-wrap:wrap;gap:12px;align-items:center}
+.btn{display:inline-flex;align-items:center;gap:8px;padding:10px 18px;border:1px solid var(--ink);border-radius:999px;text-decoration:none;font-size:14px}
+.btn.primary{background:var(--ink);color:var(--paper)}
+.pending{font-size:13px;color:var(--faint);margin-top:14px}
+
+footer{padding-block:40px 56px;display:flex;justify-content:space-between;align-items:end;gap:16px;flex-wrap:wrap;color:var(--faint);font-size:13px}
+footer img{height:56px;width:auto;filter:var(--logo-filter);opacity:.85}
+
+/* case */
+.back{display:inline-block;margin-top:40px;font-size:14px;color:var(--muted);text-decoration:none}
+.case-hero{padding-block:40px 56px}
+.case-hero h1{font-size:clamp(32px,5vw,52px);line-height:1.25;margin-top:16px;max-width:16em}
+.case-hero .lede{margin-top:22px;font-size:18px;color:var(--muted);max-width:36em}
+.facts{display:grid;grid-template-columns:repeat(4,1fr);gap:24px;margin-top:40px;padding-top:24px;border-top:1px solid var(--rule)}
+.facts dt{font-family:var(--mono);font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:var(--faint)}
+.facts dd{margin:6px 0 0;font-size:15px}
+.case h2{font-size:24px;margin-bottom:18px}
+.case .body{font-size:17px;max-width:36em}
+.case .body p+p{margin-top:14px}
+.flow{display:grid;grid-template-columns:1fr 32px 1fr 32px 1fr;align-items:stretch;margin-top:28px}
+.flow .node{border:1px solid var(--rule);border-radius:6px;padding:18px;background:var(--card)}
+.flow .node.hot{border-color:var(--red);background:var(--red-soft)}
+.flow .node .who{font-family:var(--mono);font-size:11px;color:var(--faint);letter-spacing:.06em}
+.flow .node b{display:block;font-family:var(--serif);font-size:18px;margin:6px 0 10px}
+.flow .node ul{margin:0;padding-left:18px;font-size:14px;color:var(--muted)}
+.flow .arr{display:flex;align-items:center;justify-content:center;color:var(--faint);font-size:18px}
+.quote{margin-top:32px;padding:28px 0;border-block:1px solid var(--rule)}
+.quote p{font-family:var(--serif);font-size:clamp(24px,3.6vw,34px);line-height:1.4}
+.quote small{display:block;margin-top:10px;color:var(--faint);font-size:13px}
+.pi-wrap{overflow-x:auto;margin-top:8px}
+.pi{display:grid;grid-template-columns:repeat(4,minmax(200px,1fr));min-width:820px;position:relative}
+.pi::before{content:"";position:absolute;left:0;right:0;top:9px;height:1px;background:var(--rule)}
+.pi .st{padding-right:20px}
+.pi .dot{width:19px;height:19px;border-radius:50%;background:var(--paper);border:1.5px solid var(--ink);position:relative;z-index:1}
+.pi .st:last-child .dot{background:var(--red);border-color:var(--red)}
+.pi .when{margin-top:14px;font-family:var(--mono);font-size:12px;color:var(--faint)}
+.pi b{display:block;font-family:var(--serif);font-size:20px;margin:4px 0 8px}
+.pi p{font-size:14px;color:var(--muted)}
+.pi .press{margin-top:10px;font-size:13px;border-left:2px solid var(--red);padding-left:10px}
+.ba{display:grid;grid-template-columns:1fr 48px 1fr;gap:0;margin-top:32px;align-items:stretch}
+.ba .col{border:1px solid var(--rule);border-radius:6px;padding:20px;background:var(--card)}
+.ba .col.after{border-color:var(--red)}
+.ba .col .label{margin-bottom:10px}
+.ba .col.after .label{color:var(--red)}
+.ba .lines span{display:block;height:7px;border-radius:4px;background:var(--bar);margin-bottom:7px}
+.ba .chart{display:flex;align-items:flex-end;gap:6px;height:56px;margin-top:12px}
+.ba .chart i{flex:1;background:var(--bar);border-radius:2px 2px 0 0}
+.ba .head{font-family:var(--serif);font-size:22px;line-height:1.35;margin-bottom:10px}
+.ba .col p{font-size:14px;color:var(--muted)}
+.ba .mid{display:flex;align-items:center;justify-content:center;font-size:12px;color:var(--faint);text-align:center}
+.gov{list-style:none;padding:0;margin:20px 0 0;display:grid;grid-template-columns:repeat(2,1fr);border-top:1px solid var(--rule)}
+.gov li{padding:16px 16px 16px 0;border-bottom:1px solid var(--rule);font-size:15px}
+.gov li b{display:block;font-size:13px;color:var(--faint);font-weight:500;margin-bottom:2px}
+.results{display:grid;grid-template-columns:repeat(4,1fr);border-top:1px solid var(--rule)}
+.results div{padding:20px 16px 0 0}
+.results div+div{padding-left:16px;border-left:1px solid var(--rule)}
+.results b{display:block;font-family:var(--serif);font-size:34px;line-height:1.1}
+.results span{font-size:13px;color:var(--muted)}
+.works-list{list-style:none;padding:0;margin:12px 0 0}
+.works-list li{display:flex;justify-content:space-between;gap:16px;padding-block:14px;border-bottom:1px solid var(--rule);flex-wrap:wrap}
+.works-list li span{color:var(--faint);font-family:var(--mono);font-size:13px}
+.next-cases{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.next-cases a{display:block;padding:18px;border:1px solid var(--rule);border-radius:6px;text-decoration:none;background:var(--card)}
+.next-cases b{display:block;font-family:var(--serif);font-size:18px;margin-top:6px}
+
+@media (max-width:760px){
+  body{padding-inline:16px}
+  .nav{margin-inline:-16px;padding-inline:16px}
+  .nav ul{gap:14px}
+  .about,.work-grid,.next-cases,.skills{grid-template-columns:1fr}
+  .about .photo{max-width:260px}
+  .stats,.results{grid-template-columns:1fr 1fr}
+  .stat:nth-child(3){grid-column:1/-1;border-left:0;padding-left:0}
+  .results div:nth-child(3){border-left:0;padding-left:0}
+  .facts{grid-template-columns:1fr 1fr}
+  .gov{grid-template-columns:1fr}
+  .flow{grid-template-columns:1fr}
+  .flow .arr{transform:rotate(90deg);height:32px}
+  .ba{grid-template-columns:1fr}
+  .ba .mid{padding:10px 0}
+  section{padding-block:56px}
+}
+
+.hero .pre{font-size:17px;color:var(--muted);margin-bottom:10px}
+.hero h1{font-size:clamp(30px,4.6vw,50px)!important;line-height:1.3!important;max-width:18em!important}
+.skills{grid-template-columns:repeat(2,1fr);gap:24px;margin-top:48px}
+.skill{border-top:2px solid var(--ink);padding-top:14px}
+.skill b{font-size:17px}
+.skill ul{margin:10px 0 0;padding-left:0;list-style:none;display:grid;gap:10px}
+.skill li{font-size:14px;color:var(--muted);line-height:1.65}
+.skill li strong{display:block;color:var(--ink);font-weight:600;font-size:14px}
+.photo-thumb{padding:0!important;background:#f3f3ef}
+.photo-thumb img{width:100%;height:100%;object-fit:contain}
+.photo-thumb .cap{position:absolute;left:14px;bottom:12px;font-size:12px;background:var(--paper);padding:3px 10px;border-radius:999px;color:var(--muted)}
+.shelf{grid-template-columns:repeat(6,minmax(0,1fr))!important;gap:18px 18px!important;max-width:760px}
+.bk .cv{box-shadow:0 3px 10px rgba(0,0,0,.12)!important}
+.bk .t{font-size:12.5px!important;font-weight:500!important}
+.bk .m{font-size:11px!important}
+.about .photo img{aspect-ratio:4/5;object-fit:cover}
+.tl{height:300px!important}
+.tl .tag{width:auto!important;white-space:nowrap;font-size:12px!important}
+.tl .tag b{font-size:12.5px!important}
+@media (max-width:760px){.shelf{grid-template-columns:repeat(3,minmax(0,1fr))!important}}
+@media (prefers-reduced-motion:reduce){*{transition:none!important}}
+
+/* work competencies */
+.work .thumb{aspect-ratio:auto;min-height:170px}
+.work .thumb .names{position:static;margin-bottom:18px}
+.work .k{font-family:var(--mono);font-size:12px;color:var(--red);letter-spacing:.04em}
+.work h3{margin-top:-6px}
+.pts{list-style:none;margin:0;padding:0;display:grid;gap:12px}
+.pts li{font-size:14.5px;color:var(--muted);line-height:1.7;padding-left:14px;border-left:2px solid var(--rule)}
+.pts li strong{display:block;color:var(--ink);font-weight:600}
+a.work:hover h3{text-decoration:underline}
+/* edit mode */
+.edit-fab{position:fixed;right:20px;bottom:calc(20px + env(safe-area-inset-bottom,0px));z-index:20;background:var(--ink);color:var(--paper);border:0;border-radius:999px;padding:10px 18px;font:500 14px var(--sans);cursor:pointer;box-shadow:0 6px 18px rgba(0,0,0,.2)}
+.edit-bar{position:fixed;left:0;right:0;bottom:0;z-index:20;display:flex;gap:10px;align-items:center;justify-content:flex-end;flex-wrap:wrap;padding:12px 20px calc(12px + env(safe-area-inset-bottom,0px));background:var(--card);border-top:1px solid var(--rule);box-shadow:0 -6px 18px rgba(0,0,0,.08)}
+.edit-msg{margin-right:auto;font-size:13px;color:var(--muted)}
+.eb{background:var(--ink);color:var(--paper);border:1px solid var(--ink);border-radius:999px;padding:8px 16px;font:500 14px var(--sans);cursor:pointer}
+.eb.ghost{background:transparent;color:var(--ink)}
+.eb.sm{padding:4px 10px;font-size:12px}
+.editing .is-ed{outline:1px dashed var(--faint);outline-offset:3px;border-radius:2px;cursor:text}
+.editing .is-ed:focus{outline:2px solid var(--red)}
+.editing body,.editing #app{padding-bottom:80px}
+.tl-edit{margin-top:24px;padding:16px;border:1px dashed var(--faint);border-radius:6px;overflow-x:auto}
+.tl-edit .tl-h{font-weight:600;font-size:14px;margin-bottom:8px}
+.tl-edit .tl-h small{font-weight:400;color:var(--faint);margin-left:6px}
+.tl-edit table{border-collapse:collapse;min-width:560px;margin-bottom:8px}
+.tl-edit th{font-size:12px;color:var(--faint);text-align:left;font-weight:500;padding:2px 6px}
+.tl-edit td{padding:2px 4px}
+.tl-edit input{width:100%;min-width:70px;font:14px var(--sans);padding:5px 7px;border:1px solid var(--rule);border-radius:4px;background:var(--paper);color:var(--ink)}
+
+/* ===== unified type scale (v5) ===== */
+.tl .tag{background:var(--paper);padding:0 4px;z-index:1}
+:root{--fs-h1:clamp(30px,4.4vw,46px);--fs-h2:28px;--fs-h3:20px;--fs-lead:22px;--fs-body:15px;--fs-small:13px;--fs-label:12px}
+.hero h1{font-size:var(--fs-h1)!important;line-height:1.3!important;max-width:19em!important;color:var(--ink)}
+.hero .pre{font-size:var(--fs-body);color:var(--muted);margin-bottom:10px}
+.hero .eyebrow{margin-bottom:22px}
+.stats{margin-top:44px}
+.stat b{font-size:34px;color:var(--ink)}
+.stat span{font-size:var(--fs-small);color:var(--muted)}
+.sec-head h2,.about .label+.claim{color:var(--ink)}
+.sec-head h2{font-size:var(--fs-h2)}
+.about{grid-template-columns:minmax(0,420px) minmax(0,1fr)!important;gap:40px}
+.about .photo img{aspect-ratio:auto!important;object-fit:contain!important;width:100%;height:auto}
+.about .label{margin-bottom:12px}
+.about .claim{font-size:var(--fs-lead)!important;line-height:1.5;margin-bottom:22px;color:var(--ink)}
+.pillar{grid-template-columns:72px 1fr!important;padding-block:16px}
+.pillar b{font-size:var(--fs-h3)!important;color:var(--ink)}
+.pillar p{font-size:var(--fs-body)!important;color:var(--ink)}
+.pillar small{font-size:var(--fs-small)!important;color:var(--muted)!important;margin-top:4px}
+.work{gap:14px}
+.work .thumb{min-height:0!important;padding:22px 24px!important;justify-content:flex-end}
+.work .thumb .ttl{font-family:var(--serif);font-weight:700;font-size:26px;line-height:1.25;color:var(--red)}
+.work .thumb .names{margin-bottom:14px}
+.work .thumb .names span{font-size:var(--fs-label)}
+.work h3{font-size:var(--fs-h3)!important;margin-top:0!important;color:var(--ink);line-height:1.4}
+.pts li{font-size:var(--fs-body)!important;color:var(--muted)}
+.pts li strong{font-size:var(--fs-body);color:var(--ink)}
+.work .go{font-size:var(--fs-small)}
+.bk .t{font-size:var(--fs-small)!important;color:var(--ink)}
+.bk .m{font-size:var(--fs-label)!important;color:var(--faint)}
+.tl .tag,.tl .tag b{font-size:var(--fs-label)!important}
+@media (max-width:760px){.about{grid-template-columns:1fr!important}.about .photo{max-width:none}}
+
+/* about fit (v6): text column matches photo height */
+.about{grid-template-columns:minmax(0,1.15fr) minmax(0,1fr)!important;gap:40px!important;align-items:stretch!important}
+.about .photo{align-self:start}
+.about>div:last-child{display:flex;flex-direction:column}
+.about .label{margin-bottom:8px!important}
+.about .claim{font-size:19px!important;line-height:1.55!important;margin-bottom:16px!important}
+.pillars{margin-top:auto}
+.pillar{grid-template-columns:56px 1fr!important;gap:12px!important;padding-block:11px!important}
+.pillar b{font-size:18px!important;line-height:1.5}
+.pillar p{font-size:14.5px!important;line-height:1.6}
+.pillar small{font-size:12.5px!important;margin-top:2px!important}
+
+/* v7 */
+.tl{height:262px!important}
+.apps{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:2px}
+.app{display:flex;flex-direction:column;gap:4px;padding:14px 16px;border:1px solid var(--rule);border-radius:6px;background:var(--card);text-decoration:none}
+.app:hover{border-color:var(--red)}
+.app-k{font-family:var(--mono);font-size:var(--fs-label);color:var(--faint);letter-spacing:.06em}
+.app b{font-size:14px;line-height:1.45;color:var(--ink)}
+.app-go{font-size:var(--fs-small);color:var(--red);margin-top:auto}
+@media (max-width:760px){.apps{grid-template-columns:1fr}}
+
+/* v8 cases */
+.work-grid>.work:nth-child(4) .thumb{background:var(--card);border-color:var(--rule)}
+@media (max-width:760px){.work-grid>.work:nth-child(3) .thumb{background:var(--card);border-color:var(--rule)}.work-grid>.work:nth-child(4) .thumb{background:var(--red-soft);border-color:transparent}}
+a.work{color:inherit}
+.tl .tick span{white-space:nowrap}
+.case .step{margin-bottom:10px}
+.case h2{font-size:var(--fs-h2)}
+.flow4{grid-template-columns:1fr 28px 1fr 28px 1fr 28px 1fr}
+.fan{margin-top:28px}
+.fan-core{max-width:420px;margin:0 auto;text-align:center;border:1px solid var(--ink);border-radius:6px;padding:16px 18px;background:var(--card)}
+.fan-core b{display:block;font-family:var(--serif);font-size:19px;margin-top:4px}
+.fan-core .who,.fan .node .who{font-family:var(--mono);font-size:11px;color:var(--faint);letter-spacing:.06em}
+.fan-lines{height:28px;margin:0 12.5%;border:1px solid var(--rule);border-bottom:0;border-radius:6px 6px 0 0;position:relative}
+.fan-lines::before{content:"";position:absolute;left:50%;top:-1px;height:0;width:1px}
+.fan-row,.twin{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
+.twin{grid-template-columns:1fr 1fr;margin-top:24px}
+.fan .node,.twin .node{border:1px solid var(--rule);border-radius:6px;padding:16px;background:var(--card)}
+.fan .node.hot{border-color:var(--red);background:var(--red-soft)}
+.fan .node b,.twin .node b{display:block;font-family:var(--serif);font-size:18px;margin:4px 0 6px}
+.fan .node p,.twin .node p{font-size:var(--fs-small);color:var(--muted)}
+.twin .node .who{font-family:var(--mono);font-size:11px;color:var(--red);letter-spacing:.06em}
+.pipe{display:flex;flex-wrap:wrap;align-items:center;gap:8px;margin-top:24px}
+.pipe span{border:1px solid var(--rule);border-radius:999px;padding:6px 14px;font-size:var(--fs-small);background:var(--card)}
+.pipe span.on{border-color:var(--red);color:var(--red)}
+.pipe i{font-style:normal;color:var(--faint)}
+.tiers{display:grid;gap:8px;margin-top:24px}
+.tier{display:grid;grid-template-columns:48px 1fr;align-items:center;gap:14px;border-radius:6px;padding:12px 16px;border:1px solid var(--rule);background:var(--card)}
+.tier b{font-family:var(--serif);font-size:24px;text-align:center}
+.tier p{font-size:var(--fs-small);color:var(--muted)}
+.tier.a{width:100%;border-color:var(--red);background:var(--red-soft)}.tier.a b{color:var(--red)}
+.tier.b{width:82%}.tier.c{width:64%}
+.results.r3{grid-template-columns:repeat(3,1fr)}
+.note{margin-top:14px;font-size:var(--fs-small);color:var(--faint)}
+.cap{display:flex;gap:4px;margin-top:24px}
+.cap .seg{border-radius:6px;padding:14px;min-width:0}
+.cap .seg b{display:block;font-family:var(--mono);font-size:var(--fs-label);letter-spacing:.04em;margin-bottom:6px}
+.cap .seg p{font-size:var(--fs-small);line-height:1.6}
+.cap .c,.cap .p{background:var(--bar)}
+.cap .a{background:var(--red);color:#fff}
+.appcase{display:grid;grid-template-columns:minmax(0,1.25fr) minmax(0,1fr);gap:32px;align-items:start;margin-top:24px}
+.shot{display:block;border:1px solid var(--rule);border-radius:8px;overflow:hidden;background:#fff;box-shadow:0 8px 24px rgba(0,0,0,.08);text-decoration:none}
+.shot .bar{display:flex;align-items:center;gap:6px;padding:8px 12px;background:var(--bar);border-bottom:1px solid var(--rule)}
+.shot .bar i{width:9px;height:9px;border-radius:50%;background:var(--faint);opacity:.5}
+.shot .bar em{font-style:normal;font-family:var(--mono);font-size:11px;color:var(--muted);margin-left:8px}
+.shot img{width:100%;height:auto}
+.app-sum{font-family:var(--serif);font-size:19px;line-height:1.5;margin-bottom:16px}
+.app-info .btn{margin-top:18px}
+.case-page .more{border-bottom:0}
+@media (max-width:760px){.flow4{grid-template-columns:1fr}.fan-row,.twin,.appcase,.results.r3{grid-template-columns:1fr}.fan-lines{display:none}.fan-core{margin-bottom:14px}.cap{flex-direction:column}.cap .seg{flex:auto!important}.tier.b,.tier.c{width:100%}}
+</style><template id="page"><nav class="nav" aria-label="주요 메뉴">
+  <div class="wrap">
+    <a href="#top" aria-label="홈으로"><img class="logo" src="images/logo.png" alt="글쓰는 여행자"></a>
+    <ul>
+      <li><a href="#about">About</a></li>
+      <li><a href="#career">Career History</a></li>
+      <li><a href="#work">4 Core Competencies</a></li>
+      <li><a href="#books">Books</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </div>
+</nav>
+
+<main id="home">
+<div class="wrap">
+
+  <section class="hero" id="top">
+    <p class="label eyebrow">정태일 · 언론홍보 / 커뮤니케이션 / 대외협력</p>
+    <p class="pre">뼛속까지 문과로 태어나 이공계와 함께 일하며,</p>
+    <h1>어렵고 복잡한 말을 <em>쉽고 간단하게</em> 구조화하는 비즈니스 라이팅 전문가</h1>
+    <div class="stats">
+      <div class="stat"><b>CEO 6명</b><span>3개 기업 최고 경영자의 메시지 전담 작성</span></div>
+      <div class="stat"><b>연 150건+</b><span>직접 발굴해 배포하는 전략 기획기사 (2024년 155건)</span></div>
+      <div class="stat"><b>AI 도구 3종</b><span>홍보 실무에 쓰는 AI 도구 직접 기획 및 운영</span></div>
+    </div>
+  </section>
+
+  <section id="about">
+    <div class="sec-head"><h2>About</h2></div>
+    <div class="about">
+      <div class="photo"><img src="images/profile.jpg" alt="기자실에서 노트북으로 원고를 쓰는 정태일"></div>
+      <div>
+        <p class="label">홍보인 데뷔 18년 차('26년 기준)</p>
+        <p class="claim">교육·식품·의약·소재화학·에너지 기업을 거치며<br>회사의 말과 글을 다듬어 온 커뮤니케이션 전문가</p>
+        <div class="pillars">
+          <div class="pillar"><b>번역</b><p>난해한 기술 용어와 산업 이슈를 쉬운 말로 바꿉니다.<small>소재·화학, 바이오·식품, 에너지·인프라처럼<br>기술 장벽이 높은 산업에서 익힌 감각</small></p></div>
+          <div class="pillar"><b>설득</b><p>언론과 국회·정부가 공감할 수 있는 회사의 입장을 씁니다.<small>이해관계가 복잡한 규제 산업의 논리를 상대가 쓰는 일상 언어로</small></p></div>
+          <div class="pillar"><b>확장</b><p>현장 노하우를 AI 도구로 자동화해 업무 효율을 높입니다.<small>AI 라이팅 모델·뉴스 분석 시스템 개발 · 기업과 공공기관 강의</small></p></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="career">
+    <div class="sec-head"><h2>Career History</h2><span class="label">다양한 산업군을 겪으며 성장한 격자(#)형 커리어 · 2007 — now</span></div>
+    <div class="tl-scroll"><div class="tl" id="tl" role="img" aria-label="1999년 서울시립대 입학부터 현재까지의 경력과 저서 연표"></div></div>
+  </section>
+
+  <section id="work">
+    <div class="sec-head"><h2>4 Core Competencies</h2></div>
+    <div class="work-grid">
+      <a class="work" href="#gov">
+        <div class="thumb"><p class="ttl">Government Issue</p></div>
+        <h3>대정부·대국회 커뮤니케이션과 정책 모니터링</h3>
+        <ul class="pts">
+          <li><strong>전기요금 조정 설득 논리 개발</strong>한전의 숙원과제인 요금 조정을 위해 원가 구조와 조정 필요성을 분석하고, 대중·언론·국회가 한 번에 이해할 표현으로 국회를 설득</li>
+          <li><strong>국정감사 대응</strong>산업통상자원부 산하 피감기관에서 해마다 CEO 모두발언과 예상 질의·답변을 정리하고 설명자료를 준비</li>
+          <li><strong>대통령·국회 대상 서신</strong>대통령 앞 CEO 경영서신을 여러 차례 작성해 경영 상황과 정책 지원 필요성을 전달하고, 국무총리·장관·국회의원 앞 서한을 집필</li>
+          <li><strong>정책·법령 추적</strong>전력망 특별법, 해상풍력법, 전기요금 체계 개편처럼 회사 손익을 좌우하는 법안을 발의부터 시행령 입법예고까지 모니터링</li>
+        </ul>
+        <span class="go">사례 보기 →</span>
+      </a>
+      <a class="work" href="#media">
+        <div class="thumb red"><p class="ttl">Media Relations</p></div>
+        <h3>전략 기획홍보와 위기관리</h3>
+        <ul class="pts">
+          <li><strong>담론 형성</strong>단순 배포를 넘어 에너지 산업의 흐름을 짚는 기획기사를 꾸준히 발굴해 핵심 의제를 선점</li>
+          <li><strong>프레임 전환</strong>연료비와 판매가격의 관계를 “두부(전기)가 콩(연료)보다 싸다”는 비유로 풀어 우호적 여론과 정책 수용성을 확보</li>
+          <li><strong>출입기자 네트워크</strong>산업부 출입기자단 57개 매체 154명과 현안이 없을 때도<br>먼저 찾아가는 관계를 유지</li>
+          <li><strong>위기 대응</strong>고성·속초 산불 같은 국가적 재난 상황에서 C.A.P.(위로·조치·재발방지) 원칙으로 입장문과 사과문을 즉시 설계해 부정 여론을 조기 진화</li>
+        </ul>
+        <span class="go">사례 보기 →</span>
+      </a>
+      <a class="work" href="#speech">
+        <div class="thumb red"><p class="ttl">CEO Speech Writing</p></div>
+        <h3>최고경영자 메시지 전담과 의제 설정</h3>
+        <ul class="pts">
+          <li><strong>리더의 언어 설계</strong>포스코퓨처엠·삼양그룹·한국전력에서 이취임사, 신년사, 주주총회 인사말,<br>대외 강연자료까지 11개 유형의 CEO 말씀자료 전담</li>
+          <li><strong>CEO 칼럼과 인터뷰</strong>정책 현안을 다룬 CEO 명의 칼럼을 다수 집필하고, 인터뷰 준비와 진행을 맡아 민감한 질문에도 사실과 근거로 일관되게 답하도록 지원</li>
+          <li><strong>CEO 브랜드(PI) 구축</strong>사장이 취임할 때마다 인간적 매력과 서사, 경영 현안을 엮은 스토리텔링 전략을 세우고 실행 (예: 정치인 출신 CEO를 ‘에너지 소통 전문가’로)</li>
+        </ul>
+        <span class="go">사례 보기 →</span>
+      </a>
+      <a class="work" href="#ai">
+        <div class="thumb"><p class="ttl">AI Leadership</p></div>
+        <h3>AI 도구를 직접 만들어 홍보 업무를 바꾸다</h3>
+        <ul class="pts">
+          <li><strong>AI 라이팅 모델 ‘파워라이터’</strong>한전 내부 데이터를 수차례 학습시킨 맞춤형 글쓰기 모델을 기획해<br>홍보실 초안 작성 시간을 30% 이상 단축</li>
+          <li><strong>뉴스 분석 시스템</strong>새벽부터 서너 시간 걸리던 뉴스 스크랩을 앱으로 자동화해<br>기사 수집부터 논조 분석까지 한 화면에서 확인</li>
+          <li><strong>글쓰기 실행 도구</strong>스피치라이터의 작성법을 바이브 코딩으로 만든 앱에 모두 담아<br>5분 만에 초안을 작성할 수 있도록 사내 AI 시스템 도입</li>
+        </ul>
+        <span class="go">사례 보기 →</span>
+      </a>
+    </div>
+  </section>
+
+  <section id="books">
+    <div class="sec-head"><h2>Books</h2></div>
+    <div class="shelf">
+      <a class="bk" href="https://product.kyobobook.co.kr/detail/S000221430704" target="_blank" rel="noopener"><div class="cv"><img src="images/cover_ai.jpg" alt="업무능력을 2배로 높이는 AI 글쓰기 표지"></div><span class="t">업무능력을 2배로 높이는 AI 글쓰기</span><span class="m">2026 · 천그루숲</span></a>
+      <a class="bk" href="https://product.kyobobook.co.kr/detail/S000216144526" target="_blank" rel="noopener"><div class="cv"><img src="images/cover_gpt.jpg" alt="업무시간을 반으로 줄이는 챗GPT 글쓰기 표지"></div><span class="t">업무시간을 반으로 줄이는 챗GPT 글쓰기</span><span class="m">2025 · 천그루숲</span></a>
+      <a class="bk" href="https://product.kyobobook.co.kr/detail/S000001913466" target="_blank" rel="noopener"><div class="cv"><img src="images/cover_company.jpg" alt="회사에서 글을 씁니다 표지"></div><span class="t">회사에서 글을 씁니다</span><span class="m">2020 · 천그루숲</span></a>
+      <a class="bk" href="https://search.kyobobook.co.kr/search?keyword=%ED%99%8D%EB%B3%B4%EC%9D%B8%EC%9D%98%20%EC%82%AC%EC%83%9D%ED%99%9C" target="_blank" rel="noopener"><div class="cv"><img src="images/cover_pr_life.jpg" alt="홍보인의 사생활 표지"></div><span class="t">홍보인의 사(社)생활</span><span class="m">2016 · RHK</span></a>
+      <a class="bk" href="https://search.kyobobook.co.kr/search?keyword=%EC%84%9C%EB%A5%B8%EC%82%B4%20%ED%9A%8C%EC%82%AC%EB%A5%BC%20%EB%A7%90%ED%95%98%EB%8B%A4" target="_blank" rel="noopener"><div class="cv"><img src="images/cover_thirty.jpg" alt="서른살, 회사를 말하다 표지"></div><span class="t">서른 살, 회사를 말하다</span><span class="m">2010 · 메디치미디어</span></a>
+      <a class="bk" href="https://search.kyobobook.co.kr/search?keyword=%EB%B0%94%EC%9D%B4%EC%8B%9C%ED%81%B4%20%EB%8B%A4%EC%9D%B4%EC%96%B4%EB%A6%AC" target="_blank" rel="noopener"><div class="cv"><img src="images/cover_bicycle.jpg" alt="바이시클 다이어리 표지"></div><span class="t">바이시클 다이어리</span><span class="m">2008 · 지식노마드</span></a>
+    </div>
+  </section>
+
+  <section id="contact">
+    <div class="sec-head" style="margin-bottom:20px"><h2>Contact</h2></div>
+    <div class="contact-row">
+      <a class="btn primary" href="https://www.linkedin.com/in/story30" target="_blank" rel="noopener">LinkedIn ↗</a>
+      <a class="btn" href="mailto:life1102@naver.com">life1102@naver.com</a>
+      <a class="btn" href="https://brunch.co.kr/@30story" target="_blank" rel="noopener">브런치스토리 @30story ↗</a>
+    </div>
+  </section>
+
+</div>
+</main>
+
+<!-- ============ CASE STUDIES ============ -->
+<main id="case-gov" class="case-page" hidden="">
+<div class="wrap">
+  <a class="back" href="#work">← Work로 돌아가기</a>
+  <section class="case-hero">
+    <p class="label">Case Study · Government Issue</p>
+    <h1>국회와 정부가 수긍하는 논리를 쓰다</h1>
+    <p class="lede">한전의 숙원과제인 전기요금 조정. 원가 구조를 분석해 설득 논리를 세우고, 대통령·국회·정부·국민이 각자 읽는 문서로 나눠 전달했습니다.</p>
+    <dl class="facts">
+      <div><dt>기관</dt><dd>한국전력</dd></div>
+      <div><dt>기간</dt><dd>2017 – 현재</dd></div>
+      <div><dt>역할</dt><dd>대정부·대국회 메시지 작성</dd></div>
+      <div><dt>범위</dt><dd>국정감사 · 서신 · 정책 모니터링</dd></div>
+    </dl>
+  </section>
+
+  <section class="case">
+    <p class="label step">01 · 논리 설계</p>
+    <h2>하나의 논리, 네 갈래의 문서</h2>
+    <div class="fan" aria-label="핵심 논리를 대상별 문서로 나눠 전달하는 구조">
+      <div class="fan-core"><span class="who">핵심 논리</span><b>전기요금 원가 구조와 조정 필요성</b></div>
+      <div class="fan-lines" aria-hidden="true"></div>
+      <div class="fan-row">
+        <div class="node"><span class="who">대통령</span><b>CEO 경영서신</b><p>경영 상황과 정책 지원 필요성을 여러 차례 전달</p></div>
+        <div class="node"><span class="who">국회</span><b>국정감사 대응</b><p>CEO 모두발언과 예상 질의·답변</p></div>
+        <div class="node"><span class="who">정부 부처</span><b>장관 앞 서한</b><p>국무총리·산업부·기후부 장관 대상</p></div>
+        <div class="node hot"><span class="who">국민·언론</span><b>CEO 칼럼·인터뷰</b><p>정책 현안을 일상 언어로 풀어 설명</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="case">
+    <p class="label step">02 · 국정감사</p>
+    <h2>준비가 답변을 만든다</h2>
+    <div class="flow" aria-label="국정감사 대응 절차">
+      <div class="node"><span class="who">STEP 1</span><b>상임위 쟁점 파악</b><ul><li>소관 상임위 관심 현안 정리</li><li>회사 입장과 근거자료 확인</li></ul></div>
+      <div class="arr">→</div>
+      <div class="node"><span class="who">STEP 2</span><b>예상 질의·답변</b><ul><li>의원별 예상 질의 정리</li><li>답변 논리와 설명자료 작성</li></ul></div>
+      <div class="arr">→</div>
+      <div class="node hot"><span class="who">STEP 3</span><b>CEO 모두발언</b><ul><li>모두발언 전담 작성</li><li>민감한 질문에도 사실과 근거로 일관되게</li></ul></div>
+    </div>
+  </section>
+
+  <section class="case">
+    <p class="label step">03 · 정책 모니터링</p>
+    <h2>법안은 발의 단계부터 따라간다</h2>
+    <div class="pipe" aria-label="법안 추적 단계">
+      <span>발의</span><i>→</i><span>상임위 심사</span><i>→</i><span>공포</span><i>→</i><span class="on">시행령 입법예고</span>
+    </div>
+    <ul class="gov">
+      <li><b>전력망</b>국가기간 전력망 확충 특별법</li>
+      <li><b>재생에너지</b>해상풍력 특별법</li>
+      <li><b>요금</b>전기요금 체계 개편</li>
+      <li><b>보고</b>회사 손익에 미치는 영향을 단계마다 사전 보고</li>
+    </ul>
+  </section>
+
+  <section class="case">
+    <p class="label step">04 · VIP 일정</p>
+    <h2>대통령 일정의 말을 준비하다</h2>
+    <ul class="gov">
+      <li><b>대통령 업무보고</b>CEO 인사말씀 작성·검수</li>
+      <li><b>UAE 경제사절단</b>동행 일정의 인사말씀과 인터뷰 대본</li>
+    </ul>
+  </section>
+
+  <section class="more"><p class="label">다른 사례</p><div class="next-cases"><a href="#media"><span class="label">Media Relations</span><b>여론의 흐름을 먼저 설계하다</b></a><a href="#speech"><span class="label">CEO Speech Writing</span><b>CEO의 언어를 설계하다</b></a><a href="#ai"><span class="label">AI Leadership</span><b>현장의 일을 AI 도구로 바꾸다</b></a></div></section>
+</div>
+</main>
+
+<main id="case-media" class="case-page" hidden="">
+<div class="wrap">
+  <a class="back" href="#work">← Work로 돌아가기</a>
+  <section class="case-hero">
+    <p class="label">Case Study · Media Relations</p>
+    <h1>여론의 흐름을 먼저 설계하다</h1>
+    <p class="lede">현안이 불거지기 전에 홍보 주제와 메시지를 정하고, CEO의 이미지를 임기에 맞춰 설계했습니다. 위기 때는 C.A.P. 원칙으로 여론을 수습했습니다.</p>
+    <dl class="facts">
+      <div><dt>기획기사</dt><dd>2024년 155건</dd></div>
+      <div><dt>출입기자</dt><dd>57개 매체 154명</dd></div>
+      <div><dt>역할</dt><dd>기획홍보 · CEO P.I. · 위기관리</dd></div>
+      <div><dt>방송</dt><dd>KBS1 〈쌤과 함께〉 기획협찬</dd></div>
+    </dl>
+  </section>
+
+  <section class="case">
+    <p class="label step">01 · P.I. 언론보도 프로세스</p>
+    <h2>주제에서 인터뷰까지 네 단계</h2>
+    <div class="flow flow4" aria-label="CEO P.I. 언론보도 업무 프로세스">
+      <div class="node"><span class="who">STEP 1</span><b>홍보 테마 선정</b><ul><li>재무건전성 회복</li><li>탄소중립·에너지효율</li><li>안정적 전력공급·안전경영</li><li>해외·원전사업, 상생</li></ul></div>
+      <div class="arr">→</div>
+      <div class="node"><span class="who">STEP 2</span><b>일정·매체 계획</b><ul><li>글로벌·정부·국회·시민단체 동향 반영</li><li>프로젝트 추진 현황 점검</li><li>홍보위원회로 전사 통합 운영</li></ul></div>
+      <div class="arr">→</div>
+      <div class="node"><span class="who">STEP 3</span><b>핵심 메시지</b><ul><li>요금: 두부가 콩보다 싸다</li><li>효율: 전기로 바나나 농사는 곤란</li><li>역사: 고종, 전력산업의 얼리어답터</li></ul></div>
+      <div class="arr">→</div>
+      <div class="node hot"><span class="who">STEP 4</span><b>CEO 인터뷰</b><ul><li>현안의 시의성과 중요도를 따져 시기 조율</li><li>원전 수출·해외사업 협력 메시지</li></ul></div>
+    </div>
+    <div class="ba" aria-label="메시지 재구성 전후 비교">
+      <div class="col">
+        <p class="label">Before</p>
+        <div class="lines"><span style="width:100%"></span><span style="width:94%"></span><span style="width:98%"></span><span style="width:88%"></span></div>
+        <div class="chart"><i style="height:40%"></i><i style="height:55%"></i><i style="height:48%"></i><i style="height:70%"></i><i style="height:62%"></i><i style="height:85%"></i><i style="height:78%"></i></div>
+        <p style="margin-top:12px">장문 텍스트와 원가 도표로 판매단가와 구입단가 차이를 숫자로만 설명</p>
+      </div>
+      <div class="mid">한전이 아닌<br>고객의 언어로</div>
+      <div class="col after">
+        <p class="label">After</p>
+        <p class="head">“두부가 콩보다 싸다”</p>
+        <p>핵심 메시지 한 문장과 CEO 인터뷰를 묶어 요금 조정의 필요성을 기사로 전달</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="case">
+    <p class="label step">02 · CEO 이미지 설계</p>
+    <h2>임기에 맞춰 리더의 이미지를 바꾼다</h2>
+    <div class="pi-wrap">
+      <div class="pi">
+        <div class="st"><div class="dot"></div><div class="when">취임 · 2023.09</div><b>정면돌파형</b><p>자기비판과 구조적 혁신</p><div class="press">조선일보 “전기료 정상화 필요…제2창사 각오”</div></div>
+        <div class="st"><div class="dot"></div><div class="when">100일 · 2023.12</div><b>현장·소통형</b><p>전국 사업소 현장 방문, 직원 간담회</p><div class="press">서울신문 “전국 사업소 현장점검…현장 소통 강화”</div></div>
+        <div class="st"><div class="dot"></div><div class="when">1주년 · 2024.09</div><b>에너지 산업 전문가</b><p>혁신 워크숍·비전 선포·칼럼으로 의제 제시</p><div class="press">한국일보 “취임 1년 ‘정중동’…전력망·원전·신산업 ‘탄력’”</div></div>
+        <div class="st"><div class="dot"></div><div class="when">2년차 이후</div><b>해결사형</b><p>국회·정부에 요금·투자 문제 설득</p><div class="press">이투데이 “전기료 현실화 끈기 있게 설득”</div></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="case">
+    <p class="label step">03 · 기획기사</p>
+    <h2>테마를 정해 기사를 만든다</h2>
+    <ul class="works-list">
+      <li>중앙일보 · 전기료 현실화 하자… 한국 4.6% 올릴 때 영국 89% 인상 <span>전기요금</span></li>
+      <li>MTN · [전력망이 미래다] 3부작 <span>에너지전환</span></li>
+      <li>국민일보 · 800m마다 풍력 터빈… 新공법으로 비용·환경 ‘두토끼’ <span>해상풍력</span></li>
+      <li>KBS · 김동철 한전 사장 “전력 산업 생태계 붕괴 직전… 전기요금 정상화 필요” <span>CEO</span></li>
+    </ul>
+  </section>
+
+  <section class="case">
+    <p class="label step">04 · 출입기자단 관리</p>
+    <h2>영향력에 따라 관리의 깊이를 달리한다</h2>
+    <div class="tiers" aria-label="출입기자단 A·B·C 등급 관리 구조">
+      <div class="tier a"><b>A</b><p>연합·YTN·뉴시스·조선·중앙·동아·한겨레·경향·한경·매경 등 핵심 매체 집중 관리</p></div>
+      <div class="tier b"><b>B</b><p>영향력 기준 자체 분류, 현안별 정기 소통</p></div>
+      <div class="tier c"><b>C</b><p>수시 자료 제공과 관계 유지</p></div>
+    </div>
+    <div class="results r3" style="margin-top:28px">
+      <div><b>57개</b><span>관리 매체</span></div>
+      <div><b>154명</b><span>산업부 출입기자</span></div>
+      <div><b>수시</b><span>미팅 후 미디어 리포트로 관심사항 갱신</span></div>
+    </div>
+    <p class="note">개인정보 보호를 위해 명단과 세부 내용은 공개하지 않습니다.</p>
+  </section>
+
+  <section class="case">
+    <p class="label step">05 · 위기관리</p>
+    <h2>고성·속초 산불 사과문, 무게는 조치에</h2>
+    <div class="cap" aria-label="사과문 C.A.P. 구성 비율: 위로 15%, 조치 60%, 재발방지 25%">
+      <div class="seg c" style="flex:15"><b>Care 15%</b><p>국민께 심려를 끼친 데 대한 사과와 이재민 위로</p></div>
+      <div class="seg a" style="flex:60"><b>Action 60%</b><p>성금 기탁, 특별재난 요금 감면, 한전연수원 이재민 개방, 배상위원회 즉시 구성 등 구체적 조치</p></div>
+      <div class="seg p" style="flex:25"><b>Prevention 25%</b><p>지역별·계절별 취약지역을 따로 정해 집중관리</p></div>
+    </div>
+    <ul class="gov" style="margin-top:28px">
+      <li><b>메시지 기준</b>피해 심각성, 책임 소재, 복구 가능성에 따라 메시지 구성</li>
+      <li><b>사후 관리</b>기자회견 시간·장소·매체를 조율하고 여론 변화를 계속 모니터링</li>
+    </ul>
+  </section>
+
+  <section class="more"><p class="label">다른 사례</p><div class="next-cases"><a href="#gov"><span class="label">Government Issue</span><b>국회와 정부가 수긍하는 논리를 쓰다</b></a><a href="#speech"><span class="label">CEO Speech Writing</span><b>CEO의 언어를 설계하다</b></a><a href="#ai"><span class="label">AI Leadership</span><b>현장의 일을 AI 도구로 바꾸다</b></a></div></section>
+</div>
+</main>
+
+<main id="case-speech" class="case-page" hidden="">
+<div class="wrap">
+  <a class="back" href="#work">← Work로 돌아가기</a>
+  <section class="case-hero">
+    <p class="label">Case Study · CEO Speech Writing</p>
+    <h1>CEO의 언어를 설계하다</h1>
+    <p class="lede">포스코케미칼 김진일 사장, 삼양홀딩스 김윤 회장, 그리고 한국전력 조환익·김종갑·정승일·김동철 사장. 3개 기업 여섯 명의 최고경영자가 쓰는 말과 글을 맡아 왔습니다.</p>
+    <dl class="facts">
+      <div><dt>기업</dt><dd>포스코케미칼 · 삼양홀딩스 · 한국전력</dd></div>
+      <div><dt>기간</dt><dd>2011 – 현재</dd></div>
+      <div><dt>역할</dt><dd>CEO 스피치라이터 · 언론 데스크</dd></div>
+      <div><dt>범위</dt><dd>말씀자료 11개 유형 · 연 150건</dd></div>
+    </dl>
+  </section>
+
+  <section class="case">
+    <div class="narrow">
+      <p class="label step">01 · 과제</p>
+      <h2>한 사람의 말이 회사 전체를 대표한다</h2>
+      <div class="body">
+        <p>취임사, 신년사, 창립기념사, 추도사, 경영서신, 담화문, 사과문, 기고문까지. 직원을 하나로 묶는 글과 국회·정부·언론을 설득하는 글이 같은 목소리를 내야 했습니다.</p>
+        <p>에너지·소재·화학처럼 대중이 이해하기 어려운 산업의 현안을 누구나 알아듣는 말로 바꾸는 일이 모든 원고의 출발점이었습니다.</p>
+      </div>
+    </div>
+    <div class="flow" aria-label="말씀자료 작성 프로세스">
+      <div class="node"><span class="who">STEP 1 · 실무 부서 + 스피치라이터</span><b>기획과 초안</b><ul><li>행사계획 수립</li><li>말씀자료 초안 작성</li></ul></div>
+      <div class="arr">→</div>
+      <div class="node"><span class="who">STEP 2 · 행사 실무 부서 · 비서실</span><b>보고와 검수</b><ul><li>일정·보고 방식 협업</li><li>CEO 보고 및 검수</li></ul></div>
+      <div class="arr">→</div>
+      <div class="node hot"><span class="who">STEP 3 · 말씀자료 TF</span><b>조율과 퇴고</b><ul><li>CEO 메시지 검수·작성</li><li>낭독회 실행 및 퇴고</li></ul></div>
+    </div>
+  </section>
+
+  <section class="case">
+    <p class="label step">02 · 결과</p>
+    <h2>숫자로 본 스피치라이팅</h2>
+    <div class="results r3" style="margin-top:24px">
+      <div><b>6명</b><span>보좌한 CEO(3개 기업)</span></div>
+      <div><b>150건</b><span>연간 CEO 메시지</span></div>
+      <div><b>11개</b><span>말씀자료 유형</span></div>
+    </div>
+    <h2 style="margin-top:56px;font-size:20px">대표 원고</h2>
+    <ul class="works-list">
+      <li>고 박태준 포스코 명예회장 추도사 <span>2011 · 포스코케미칼</span></li>
+      <li>삼양그룹 2020 비전·New CI 선포식 기념사 <span>2016 · 삼양홀딩스</span></li>
+      <li>한전법 통과 관련 국회의원 서신 <span>2022 · 한국전력</span></li>
+      <li>한국전력 창립 120주년 기념사 <span>한국전력</span></li>
+    </ul>
+  </section>
+
+  <section class="more"><p class="label">다른 사례</p><div class="next-cases"><a href="#gov"><span class="label">Government Issue</span><b>국회와 정부가 수긍하는 논리를 쓰다</b></a><a href="#media"><span class="label">Media Relations</span><b>여론의 흐름을 먼저 설계하다</b></a><a href="#ai"><span class="label">AI Leadership</span><b>현장의 일을 AI 도구로 바꾸다</b></a></div></section>
+</div>
+</main>
+
+<main id="case-ai" class="case-page" hidden="">
+<div class="wrap">
+  <a class="back" href="#work">← Work로 돌아가기</a>
+  <section class="case-hero">
+    <p class="label">Case Study · AI Leadership</p>
+    <h1>현장의 일을 AI 도구로 바꾸다</h1>
+    <p class="lede">스피치라이터로 일하며 매일 반복되던 일을 AI 도구로 옮겼습니다. 직접 기획하고 만들어, 홍보실 동료와 강의 수강생이 바로 쓰도록 공개했습니다.</p>
+    <dl class="facts">
+      <div><dt>도구</dt><dd>앱 3종 · 코칭 챗봇</dd></div>
+      <div><dt>배포</dt><dd>Streamlit · GitHub Pages · GPT 스토어</dd></div>
+      <div><dt>대상</dt><dd>홍보실 실무자 · 강의 수강생</dd></div>
+      <div><dt>활용</dt><dd>사내 AI 강의 · 글쓰기 교육</dd></div>
+    </dl>
+  </section>
+
+  <section class="case">
+    <p class="label step">01 · 뉴스 분석 시스템</p>
+    <h2>홍보실에 꼭 필요한 뉴스 분석시스템</h2>
+    <div class="appcase">
+      <a class="shot" href="https://kepco-news-monitor-gbff2xm5nzatkkmvjsd9tm.streamlit.app/" target="_blank" rel="noopener"><span class="bar"><i></i><i></i><i></i><em>kepco-news-monitor · streamlit.app</em></span><img src="images/app_news.jpg" alt="뉴스 분석시스템 첫 화면: 상단 시장 지표와 키워드 입력 안내"></a>
+      <div class="app-info">
+        <p class="app-sum">새벽마다 서너 시간 걸리던 뉴스 스크랩을 키워드 한 번으로 끝냅니다.</p>
+        <ul class="pts">
+          <li><strong>기사 수집</strong>네이버 뉴스 API로 키워드 기사를 모아 언론사 영향력 등급에 따라 정렬</li>
+          <li><strong>논조 분석</strong>기사별 감성(긍정·부정)을 판별하고 레이더 차트·워드클라우드·히트맵으로 시각화</li>
+          <li><strong>시장 지표</strong>코스피·코스닥·나스닥·S&amp;P500·환율·두바이유를 첫 화면에 함께 표시</li>
+        </ul>
+        <a class="btn" href="https://kepco-news-monitor-gbff2xm5nzatkkmvjsd9tm.streamlit.app/" target="_blank" rel="noopener">앱 열기 ↗</a>
+        <p class="note">첫 접속 때 약간의 대기 시간이 걸릴 수 있습니다.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="case">
+    <p class="label step">02 · 글쓰기 실습 도구</p>
+    <h2>스피치라이터의 5분 완성 글쓰기</h2>
+    <div class="appcase">
+      <a class="shot" href="https://goodlife1102-ctrl.github.io/writing-partner/" target="_blank" rel="noopener"><span class="bar"><i></i><i></i><i></i><em>writing-partner · github.io</em></span><img src="images/app_writing.jpg" alt="글쓰기 실습 앱 화면: 왜·무엇을·어떻게·누구에게 4단계 입력"></a>
+      <div class="app-info">
+        <p class="app-sum">빈칸만 채우면 매체별 초안이 나오는 실습용 웹앱입니다.</p>
+        <ul class="pts">
+          <li><strong>4단계 설계</strong>왜(배경·목적) → 무엇을(주제·자료) → 어떻게(구성·문체) → 누구에게(독자) 순서로 글의 뼈대를 잡음</li>
+          <li><strong>4개 탭 흐름</strong>쓰기 → 초안 → 매체별 원고 → 발행일지로 이어지는 작업 순서</li>
+          <li><strong>강의 운영</strong>참가 코드와 카카오 로그인으로 수강생별 작업을 관리</li>
+        </ul>
+        <a class="btn" href="https://goodlife1102-ctrl.github.io/writing-partner/" target="_blank" rel="noopener">앱 열기 ↗</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="case">
+    <p class="label step">03 · 라이팅 모델</p>
+    <h2>회사의 문체를 배운 AI</h2>
+    <div class="twin">
+      <div class="node"><span class="who">사내 전용</span><b>파워라이터</b><p>실제 CEO 말씀자료 321건을 학습시킨 맞춤형 라이팅 모델. 사장의 메시지 전략과 문체를 반영해 초안을 씁니다.</p></div>
+      <div class="node"><span class="who">GPT 스토어 공개</span><b>홍보전문가 보도자료 밀착코칭</b><p>보도자료·연설문·보고서의 우수 사례와 패턴을 학습한 챗봇. 스토어의 ‘홍보·보도자료·위기관리’ 검색에서 상위에 추천됐습니다.</p></div>
+    </div>
+  </section>
+
+  <section class="more"><p class="label">다른 사례</p><div class="next-cases"><a href="#gov"><span class="label">Government Issue</span><b>국회와 정부가 수긍하는 논리를 쓰다</b></a><a href="#media"><span class="label">Media Relations</span><b>여론의 흐름을 먼저 설계하다</b></a><a href="#speech"><span class="label">CEO Speech Writing</span><b>CEO의 언어를 설계하다</b></a></div></section>
+</div>
+</main>
+
+<div class="wrap">
+  <footer>
+    <div>© 2026 정태일</div>
+    <img src="images/logo.png" alt="글쓰는 여행자 서명">
+  </footer>
+</div>
+
+<script type="application/json" id="tldata">{"spans":[{"s":"1999.03","e":"2003.02","t":"서울시립대","r":"국어국문학과"},{"s":"2003.03","e":"2005.06","t":"육군 ROTC","r":"중위 전역"},{"s":"2005.07","e":"2007.09","t":"홍보대행사","r":"AE"},{"s":"2007.10","e":"2011.09","t":"EEC엘리트(윤선생)","r":"홍보실 대리"},{"s":"2011.10","e":"2013.05","t":"포스코케미칼","r":"홍보그룹 대리"},{"s":"2013.05","e":"2017.03","t":"삼양홀딩스","r":"홍보실 과장"},{"s":"2017.03","e":"현재","t":"한국전력공사","r":"선임 차장 · CEO 스피치라이터"}],"books":[{"y":"2014.11","t":"홍보의 신"},{"y":"2016.11","t":"홍보인의 사생활"},{"y":"2020.02","t":"회사에서 글을 씁니다"},{"y":"2025.04","t":"업무시간을 반으로 줄이는 챗GPT 글쓰기"},{"y":"2026.10","t":"업무능력을 2배로 높이는 AI 글쓰기"}]}</script>
+</template>
+</head>
+<body>
+<div id="app"></div><script>
+(function(){
+  var RESET=':root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#faf9f5;color:#141413}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}';
+  var SKEL='<!doctype html><html><head><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><style>'+RESET+'</style></head><body>';
+  var FONTS='<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Gowun+Batang:wght@400;700&family=IBM+Plex+Sans+KR:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap">';
+  var SELF=document.currentScript.textContent;
+  var tpl=document.getElementById('page');
+  var app=document.getElementById('app');
+  var EDITABLE='h1,h2,h3,p,li,dt,dd,figcaption,.stat b,.stat span,.results b,.results span,.bk .t,.bk .m,.names span,.big,.sub,.pillar b,.k,.meta span,.go,.soon,.when,.press,.who,.node b,.btn,.label,.roles,footer div,.next-cases b';
+  var TL=JSON.parse(tpl.content.getElementById('tldata').textContent);
+  var editing=false, busy=false;
+
+  function editables(root){
+    var all=[].slice.call(root.querySelectorAll(EDITABLE)), set=new Set(all);
+    return all.filter(function(el){
+      for(var p=el.parentElement;p&&p!==root;p=p.parentElement){ if(set.has(p)) return false; }
+      return !el.closest('#tl') && !el.closest('.edit-ui');
+    });
+  }
+  function ym(v){ if(!v) return NaN; v=String(v).trim(); if(v==='현재'){ var d=new Date(); return d.getFullYear()+d.getMonth()/12; } var p=v.split('.'); return parseInt(p[0],10)+((parseInt(p[1]||'1',10)||1)-1)/12; }
+
+  // ---------- timeline ----------
+  function drawTL(){
+    var el=app.querySelector('#tl'); if(!el) return;
+    var Y0=1999, Y1=2027.2, L=64;
+    function x(y){ return L+(y-Y0)/(Y1-Y0)*(el.clientWidth-L-70); }
+    function add(cls,css,html){ var d=document.createElement('div'); d.className=cls; Object.assign(d.style,css); if(html!=null) d.innerHTML=html; el.appendChild(d); return d; }
+    function esc(s){ var d=document.createElement('div'); d.textContent=s==null?'':s; return d.innerHTML; }
+    el.innerHTML='';
+    var lanes=[{n:'경력',y:34},{n:'저서',y:140}];
+    lanes.forEach(function(l){ add('lane-name',{top:(l.y-3)+'px'},l.n); });
+    [1999,2005,2010,2015,2020,2026].forEach(function(y){ var lb=y===2026?'2026 (현재)':String(y); add('grid',{left:x(y)+'px',bottom:'30px'}); add('tick',{left:x(y)+'px',top:'230px'},'<span>'+lb+'</span>'); });
+    add('axis',{left:L+'px',top:'230px'});
+    var spans=TL.spans.slice().sort(function(a,b){return ym(a.s)-ym(b.s);});
+    spans.forEach(function(s,i){
+      var a=ym(s.s), b=ym(s.e), now=String(s.e).trim()==='현재', top=lanes[0].y; if(isNaN(a)||isNaN(b)) return;
+      add('bar'+(now?' now':''),{left:x(a)+'px',width:Math.max(6,x(b)-x(a)-3)+'px',top:top+'px'});
+      var row=i%2, ty=top+22+(row?40:0);
+      if(row) add('lead',{left:(x(a)+4)+'px',top:(top+16)+'px',height:'40px'});
+      add('tag',{left:x(a)+'px',top:ty+'px'},'<b>'+esc(s.t)+'</b><i>'+esc(s.r)+'</i>');
+      if(now) add('next',{left:(x(b)+14)+'px',top:(top-2)+'px'},'진행 중');
+    });
+    var books=TL.books.slice().sort(function(a,b){return ym(a.y)-ym(b.y);});
+    books.forEach(function(bk,i){
+      var yy=ym(bk.y), top=lanes[1].y, last=i===books.length-1; if(isNaN(yy)) return;
+      add('ms'+(last?' red':''),{left:(x(yy)-6)+'px',top:(top+1)+'px'});
+      var n=books.length, row=last?1:(i===n-2?2:i%2), ty=top+22+row*24;
+      if(row) add('lead',{left:x(yy)+'px',top:(top+16)+'px',height:(row*24)+'px'});
+      var nearEnd=i>=n-2;
+      add('tag'+(nearEnd?' r':''),nearEnd?{right:(el.clientWidth-x(yy)-6)+'px',top:ty+'px'}:{left:(x(yy)-6)+'px',top:ty+'px'},'<b>'+esc(bk.t)+'</b>');
+    });
+  }
+
+  // ---------- routing ----------
+  function route(){
+    var home=app.querySelector('#home'); if(!home) return;
+    var h=(location.hash||'').replace('#',''), cs=h?app.querySelector('#case-'+CSS.escape(h)):null;
+    home.hidden=!!cs;
+    app.querySelectorAll('.case-page').forEach(function(m){ m.hidden=(m!==cs); });
+    if(cs) window.scrollTo(0,0);
+    else { drawTL(); if(h){ var t=app.querySelector('#'+CSS.escape(h)); if(t) t.scrollIntoView(); } }
+  }
+
+  function render(){
+    app.innerHTML='';
+    var frag=tpl.content.cloneNode(true);
+    var d=frag.getElementById('tldata'); if(d) d.remove();
+    app.appendChild(frag);
+    route();
+  }
+  window.addEventListener('hashchange',route);
+  window.addEventListener('resize',drawTL);
+  render();
+
+})();
+</script>
+
+</body>
+</html>
