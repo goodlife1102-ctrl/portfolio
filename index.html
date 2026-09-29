@@ -142,6 +142,10 @@ a.bk:hover .t{text-decoration:underline}
 
 /* contact */
 .contact-row{display:flex;flex-wrap:wrap;gap:12px;align-items:center}
+.copy-mail{background:transparent;color:var(--ink);font:inherit;font-size:14px;cursor:copy;user-select:text;position:relative}
+.copy-mail .cp-ok{display:none;font-size:12px;color:var(--red)}
+.copy-mail.copied .cp-ok{display:inline}
+.copy-mail.copied .addr::after{content:" ·"}
 .lec-note{margin:18px 0 0;font-size:13px;line-height:1.7;color:var(--muted)}
 .lec-note .lec-links{white-space:nowrap;margin-left:6px}
 .lec-note a{color:inherit;text-decoration:underline;text-underline-offset:3px}
@@ -645,9 +649,10 @@ a.work{color:inherit}
     <div class="sec-head" style="margin-bottom:20px"><h2>Contact</h2></div>
     <div class="contact-row">
       <a class="btn primary" href="https://www.linkedin.com/in/story30" target="_blank" rel="noopener">LinkedIn ↗</a>
-      <a class="btn" href="mailto:life1102@naver.com">life1102@naver.com</a>
+      <a class="btn" href="https://search.naver.com/search.naver?where=nexearch&amp;sm=tab_etc&amp;mra=bjky&amp;x_csa=%7B%22fromUi%22%3A%22kb%22%7D&amp;pkid=1&amp;os=207321&amp;qvt=0&amp;query=%EC%A0%95%ED%83%9C%EC%9D%BC" target="_blank" rel="noopener">네이버 인물정보 ↗</a>
+      <button type="button" class="btn copy-mail" data-copy="life1102@naver.com" title="눌러서 주소 복사"><span class="addr">life1102@naver.com</span><span class="cp-ok" aria-hidden="true">복사됨</span></button>
     </div>
-    <p class="lec-note">기업·기관 대상 강의 요청 (AI 글쓰기 · 리더의 말과 글 · 직장인의 칼럼·책 쓰기) <span class="lec-links"><a class="lec-mail" href="mailto:life1102@naver.com?subject=%EA%B0%95%EC%9D%98%20%EB%AC%B8%EC%9D%98">강의 문의</a> · <a class="lec-pdf" href="images/lecture_proposal.pdf" download="정태일_직장인 AI 글쓰기 강의 제안서.pdf">강의 소개서(PDF)</a></span></p>
+    <p class="lec-note">기업·기관 대상 강의 요청 (AI 글쓰기 · 리더의 말과 글 · 직장인의 칼럼·책 쓰기) <span class="lec-links"><a class="lec-pdf" href="images/lecture_proposal.pdf" download="정태일_직장인 AI 글쓰기 강의 제안서.pdf">강의 소개서(PDF)</a></span></p>
   </section>
 
 </div>
@@ -1062,5 +1067,12 @@ a.work{color:inherit}
 
 })();
 </script>
+<script>(function(){
+  function copyMail(el){
+    var addr=el.getAttribute('data-copy'), done=function(){ el.classList.add('copied'); clearTimeout(el._t); el._t=setTimeout(function(){ el.classList.remove('copied'); },2000); };
+    function fallback(){ var r=document.createRange(); r.selectNodeContents(el.querySelector('.addr')||el); var s=window.getSelection(); s.removeAllRanges(); s.addRange(r); var ok=false; try{ ok=document.execCommand('copy'); }catch(_){} if(ok) done(); }
+    if(navigator.clipboard&&navigator.clipboard.writeText) navigator.clipboard.writeText(addr).then(done,fallback); else fallback();
+  }
+document.addEventListener('click',function(e){ var cm=e.target.closest('.copy-mail'); if(cm){ e.preventDefault(); copyMail(cm); } });})();</script>
 </body>
 </html>
